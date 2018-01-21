@@ -457,20 +457,32 @@ footer {
 
 @media screen and (max-width: 1023px) {
   /* 01. Basic Setting */
+  section {
+    padding: 50px 0;
+  }
+
   .container {
     width: 100%;
-    padding: 0 15px;
     /*原本文字教材在這裡設定auto，但是我們在上面已經設定width: 85%了，所以mobile我設定100%*/
   }
 
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
   /* 02. Header */
+  header {
+    padding: 0 15px;
+  }
+
   .menu-button {
     float: right;
     font-size: 25px;
     line-height: 40px;
     color: #fff;
     background: transparent;
-    padding: 0 15px;
+    padding: 0 0 0 15px;
     border: 0;
   }
 
@@ -480,7 +492,7 @@ footer {
     right: 0;
     width: 52px;
     height: 40px;
-    margin: 0 15px 0;
+    margin: 0 -15px 0 0;
     opacity: 0;
   }
 
@@ -506,6 +518,79 @@ footer {
 
   .nav li a {
     padding: 20px 12px;
+  }
+
+  /* Homepage Background Image */
+  .home_bg {
+    background-attachment: initial; /*或者 inherit 也可以*/
+    /* background-attachment 在 mobile device 無法使用，需要把它關掉 */
+    /* https://stackoverflow.com/questions/23236158/how-to-replicate-background-attachment-fixed-on-ios */
+  }
+
+  .container_table_cell h2 {
+    font-size: 36px;
+  }
+
+  /* 04. About Me */
+  .col-left, .col-right {
+    width: 100%;
+  }
+
+  .col-left {
+    margin-bottom: 15px;
+  }
+
+  .button-group .download_cv,
+  .button-group .hire_me {
+    display: block;
+    text-align: center;
+  }
+
+  .button-group .download_cv {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* 05. What I Offer */
+  .service-content {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* 06. Resume */
+  .col-horizontal .col-item {
+    width: 100%;
+  }
+
+  /* 07. Quote */
+  .quotes {
+    background-attachment: initial; /*或者 inherit 也可以*/
+  }
+
+  .quote-inner h3 {
+    font-size: 20px;
+  }
+
+  /* 08. Latest Work */
+  .col-work {
+    width: 100%;
+  }
+
+  /* 09. Contact */
+  .contact-form,
+  .contact-form .form-input:first-child,
+  .contact-form .form-input:nth-child(2) {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  /* 10. Footer */
+  .footer-content p {
+    font-size: 12px;
   }
 }
 
