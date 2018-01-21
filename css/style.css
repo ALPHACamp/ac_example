@@ -447,6 +447,71 @@ footer {
 
 
 
+/*========================== 11. Mobile Setting ==========================*/
+@media screen and (min-width: 1024px) {
+  .menu-button,
+  .menu-button-checkbox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* 01. Basic Setting */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    /*原本文字教材在這裡設定auto，但是我們在上面已經設定width: 85%了，所以mobile我設定100%*/
+  }
+
+  /* 02. Header */
+  .menu-button {
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: #fff;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+  }
+
+  .menu-button-checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 40px;
+    margin: 0 15px 0;
+    opacity: 0;
+  }
+
+  .menu-button-checkbox:checked ~ nav .nav {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+  }
+
+  .nav li {
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .nav li a {
+    padding: 20px 12px;
+  }
+}
+
+
+
+
 
 
 
